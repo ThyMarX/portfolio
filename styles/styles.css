@@ -1,6 +1,120 @@
 @charset "utf-8";
 /* main protolio styles */
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 body{
-	font-family: 'Roboto', sans-serif;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+.container{
+	display: flex;
+	width: 1350px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: auto;
+	margin-right: auto;
+}
+.side_bar{
+	height: 1000px;
+	width: 9%;
+	float: left;
+	text-align: left;
+	padding-left: 2px;
+}
+.correct{
+	position: fixed;
+	z-index: 1;
+	top: 35px;
+	left: 50px;
+	overflow-x: hidden;
+}
+.main{
+	width: 90%;
+	background: none;
+	border: none;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.titel.indhold{
+	float: right;
+	clear: right;
+}
+.titel{
+	height: 100px;
+	font-size: 60px;
+	padding-top: 20px;
+	line-height: 0;
+	margin-top: 0;
+}
+#titel{
+	height: 160px;
+}
+.undertitle{
+	font-size: 40px;
+}
+.indhold{
+	height: 600px;
+}
+#citat1{
+	position: absolute;
+	top: 220px;
+	left: 410px;
+	width: 90px;
+	text-align: right;
+}
+#citat2{
+	position: absolute;
+	top: 300px;
+	left: 280px;
+	width: 90px;
+	text-align: left;
+}
+
+#citat3{
+	position: absolute;
+	top: 400px;
+	left: 390px;
+	width: 120px;
+	text-align: left;
+}
+#citat4{
+	position: absolute;
+	top: 370px;
+	left: 1010px;
+	width: 150px;
+	text-align: right;
+}
+#citat5{
+	position: absolute;
+	top: 210px;
+	left: 1090px;
+	width: 130px;
+	text-align: left;
+}
+#citat6{
+	position: absolute;
+	top: 540px;
+	left: 430px;
+	width: 640px;
+	text-align: left;
+}
+#citat7{
+	position: absolute;
+	top: 620px;
+	left: 410px;
+	width: 650px;
+	text-align: right;
+	font-style: italic;
+}
+.projekt_indhold{
+	height: 850px;
+}
+#om_tekst{
+	position: absolute;
+	top: 2000px;
+	width: 280px;
+	text-align: left;
+	left: 450px;
+}
+#om_billede{
+	position: absolute;
+	top: 1940px;
 }
