@@ -1,0 +1,61 @@
+/* CSS Document */
+
+.burger{
+	display: block;
+	margin-top: 43px;
+}
+h1{
+	font-size: 24px;;
+}
+h2{
+	font-size: 18px;
+}
+h3{
+	font-size: 14px;
+}
+.hvemErVi{
+	padding: 20px;
+}
+.top{
+	height: 400px;
+}
+.brandStory{
+	padding-left: 20px;
+	padding-top: 160px;
+}
+.hotbotIkon{
+	padding: 0;
+	padding-right: 5px;
+	margin-top: -50px;
+}
+.hotbotTekst{
+	padding: 0;
+	margin-top: -50px;
+}
+.hotbot{
+	margin-top: 50px;
+}
+.produkter3{
+	padding-bottom: 50px;
+}
+.produktIkon{
+	height: 130px;
+}
+.produktTekstMobil{
+	display: flex;
+	height: 130px;
+	padding-left: 15px;
+}
+.medarbejderBox{
+	width: 20%;
+}
+#navBar{
+	display: none;
+}
+.navigation{
+	margin-top: 10px;
+	padding: 2px;
+}
+
+
+

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import "simpel-grid-thisisdallas-kopi.css";
+
+main{
+	margin: -8px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	
+	align-content: center;
+}
+
+div{
+	border: 1px solid transparent;
+}
+
+[class*='col-'] {
+	padding-right: 10px;
+	margin-bottom: 10px;
+}
+
+/* Vi bliver nød til at ha 2 burger fordi en fejl */
+.burger{
+	display: none;
+	float: right;
+	width: 20%;
+}
+
+.top{
+	height: 550px;
+	background-image: url("billeder/baggrund1.png");
+	background-size: cover;
+}
+
+.topLine{
+	display: flex;
+	align-items: flex-end;
+}
+
+.burger{
+}
+
+.nulstil{
+	padding: 0px;
+	margin: 0px;
+}
+
+.logo{
+	margin-top: 51px;
+	width: 70%;
+	margin-right: 25%;
+}
+
+#navBar{
+	width: 100%;
+	max-height: 200px;
+	display: flex;
+}
+.burger img{
+	width: 100%;
+}
+.navigation img{
+	width: 115%;
+}
+
+.brandStory{
+	padding-top: 140px;
+	height: 300px;
+	text-align: center;
+}
+
+.hvemErVi{
+	text-align: center;
+	background-color: #3D6BB4;
+	color: white;
+	padding-left: 90px;
+	padding-right: 100px;
+	padding-top: 10px;
+	margin-top: -50px;
+	padding-bottom: 10px;
+}
+
+.hotbotIkon{
+	margin-top: 50px;
+	padding: 30px;
+	margin-bottom: 80px;
+}
+
+.hotbotTekst{
+	height: 200px;
+	margin-top: 50px;
+	padding-right: 20px;
+	padding-top: 40px;
+}
+
+.ledning{
+	padding-left: 300px;
+	padding-top: 70px;
+	margin-bottom: 80px;
+	margin-top: 100px;
+}
+
+.produkter3{
+	background-color: #F0F0F0;
+	padding-top: 80px;
+	padding-left: 30px;
+	margin-top: 50px;
+}
+
+.produktIkon{
+}
+.produktIkon img{
+	width: 100%;
+	object-fit: scale-down;
+}
+
+.produktTekst{
+	height: 200px;
+}
+
+.produktTekstMobil{
+	display: none;
+}
+
+.baggrund4{
+	background-color: #3D6BB4;
+	margin-top: -10px;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.omOs{
+	height: 50px;
+	text-align: center;
+}
+
+.medarbejderBillede{
+	width:100%;
+	border-radius: 50%;
+}
+
+.medarbejderNavn{
+	height: 40px;
+	text-align: center;
+	margin-top: -30px;
+	color: white;
+}
+
+.kontaktFormular{
+	height: 440.5px;
+	background-color: #F0F0F0;
+	padding-top: 20px;
+	padding-left: 50px;
+	margin-top: -10px;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.kontaktBillede{
+	height: 434px;
+}
+
+.footer{
+	height: 200px;
+	padding-left: 50px;
+	background-color: #3D6BB4;
+	line-height: 30px;
+	width: 100%;
+}
+.ceo{
+	width: 100%;
+	text-align: center;
+}
+.medarbejderBox{
+	width:15%;
+	display:inline-block;
+}
+.white{
+	color: white;
+}
+.middle{
+	text-align: center;
+	padding-left: 0;
+}
+.linkLookAlike{
+	text-decoration: underline;
+}
+.navigation:hover{
+	opacity: 0.6;
+}
+.burgerIkon:hover{
+	opacity: 0.6;
+}
+.stilling{
+	font-size: 73%;
+	color: #B3BAFF;
+}
+
+.hide{
+	display: flex !important;
+}
+#navBarMobile{
+	display: none;
+	margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+	#navBarMobile{ display: none !important;}
+}

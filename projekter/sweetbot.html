@@ -1,0 +1,157 @@
+<!doctype html>
+<html>
+	
+<head>
+	<meta charset="utf-8">
+	<title>Sweetbot</title>
+	
+	<link rel="stylesheet" href="../styles/standard.css">
+	<link rel="stylesheet" href="../styles/projekter.css">
+</head>
+
+<body>
+	<div id="container">
+		
+		<!-- -----Sidebar sektionen----- /-->
+		<div class="sidebar">
+			<div class="logo">
+				<a href="../index.html#forside"><img src="../billeder/logo.png" alt="Logo"></a>
+			</div>
+			
+			<div class="flex sidebarStreg">
+				<nav>
+					<div class="dropdown">
+						<a href="../index.html#projekter" class="aktuel">Projekter</a>
+						<div class="dropdownLinks">
+							<a href="eksamen.html"><h4>Eksamen</h4></a> 
+							<a href="xd_portfolio.html"><h4>Drøm dit portfolio</h4></a>
+							<a href="byg_en_app.html"><h4>Byg en app</h4></a>
+							<h4 class="aktuel">Sweetbot</h4>
+						</div>
+					</div>
+					
+					<div class="dropdown">
+						<a href="../index.html#omMig">Om mig</a>
+						<div class="dropdownLinks">
+							<a href="../refleksioner.html"><h4>Refleksioner</h4></a>
+						</div>
+					</div>
+					
+					<div><a href="../index.html#kontakt">Kontakt</a></div>
+				</nav>
+			</div>
+		</div>
+		
+		<div class="main flex">
+			
+			<!-- -----Selve projekt sektionen----- /-->
+			<div class="titel">
+				<h1>Sweetbot</h1>
+			</div>
+			
+			<div class="slideshow">
+				<div class="slide">
+					<div class="slideRamme">
+						<div class="numbertext">1 / 4</div>
+						<img src="../billeder/sweetbotRemake.png" class="fade" alt="TEMP">
+					</div>
+					<div class="slideTekst tekst"><p>En oversigt over de visuelle hovedændringer jeg har lavet til siden.</p></div>
+				</div>
+				
+				<div class="slide">
+					<div class="slideRamme">
+						<div class="numbertext">2 / 4</div>
+						<img src="../billeder/sweetbotSkitser.png" class="fade" alt="TEMP">
+					</div>
+					<div class="slideTekst tekst"><p>Brainstorm, skitser samt wireframe af siden.</p></div>
+				</div>
+				
+				<div class="slide">
+					<div class="slideRamme">
+						<div class="numbertext">3 / 4</div>
+						<img src="../billeder/sweetbotIkoner.png" class="fade" alt="TEMP">
+					</div>
+					<div class="slideTekst tekst"><p>Ikonerne vi har brugt og lavet til portfolien.</p></div>
+				</div>
+				
+				<div class="slide">
+					<div class="slideRamme">
+						<div class="numbertext">4 / 4</div>
+						<img src="../billeder/sweetbotIkonRettelser.png" class="fade" alt="TEMP">
+					</div>
+					<div class="slideTekst tekst"><p>Rettelserne jeg fandt på daværende ikoner.</p></div>
+				</div>
+				
+				
+				<!-- ---Næste og forrige knapper--- -->
+				<a class="forrige" onclick="plusSlide(-1)">&#10096;</a>
+				<a class="naeste" onclick="plusSlide(1)">&#10097;</a>
+			</div>
+			
+			<div class="projektOpsummering">
+				<div class="tekst">
+					<h3>Problemstilling</h3>
+					<p>Det fiktive webbureau Sweetbot specialiserer sig indenfor, webudvikling, digital security, branding samt en nyudviklet e-commerce under navnet HotBot. I skal i grupper af 3 til 4 lave en dansk udgave af deres website som skal være optimeret til mobile enheder og indgå jQuery elementer. Udover skal i lave informationsarkitektur samt en brugertest af sitet. Sweetbot har en style guide der skal følges.</p>
+
+					<h3>Løsning</h3>
+					<p>Som gruppe bestemte vi sammen designet, layout og features af siden. Herefter uddelegerede vi de resterende opgaver så vi hver især håndterede det emne vi var bedst til. Vi møttes ofte samt informerede og hjalp hinanden grundigt om de opgaver vi hver især var ansvarlige for.</p>
+					<p>Resultatet blev en one-page side som fremviste produktikonerne med tilhørende tekst, information om firmaet og medarbejderne, en kontaktformular samt firmaets placering på google maps. </p>
+				</div>
+			</div>
+			
+			<div class="projektTekst tekst">
+				<h3>Min første version af projektet</h3>
+				<p>Efter vi delte opgaverne op stod jeg primært for kodningen. Det var sjovt og udfordrende. Vi valgte at bruge ThisIsDalas simple-grid da vi stadig var nye til at lave så stort et projekt. Det var både godt og skidt idet det gjorde programmeringsprocessen nemmere til at starte med, men mere kompliceret senere.</p>
+				<p>Som sagt hjalp vi hinanden meget i de forskellige opgaver. Jeg kiggede blandt andet ikonerne igennem efter de var udarbejdet, og kom med forslag til hvad der kunne rettes. </p>
+				
+				<h3>Det nye i Remaket</h3>
+				<p>Feedbacken vi fik var: produktbillederne skulle bevare deres størrelsesforhold uanset skærmstørrelse, menubaren og logoet skulle være på linje, nogle steder skulle der være flere tekstafsnit og der skulle stå kontaktinformation og stilling under medarbejdernes billeder. Dette har jeg rettet i remaken.</p>
+				<p>Ud over dette var der en bug i den originale kode. Hvis man havde formindsket siden til mobil version, åbnet og så lukket menuen med burgermenuen og så gik tilbage til desktopversionen, kunne man ikke se menubaren mere. Dette er ligeledes rettet i remaken.</p>
+				<p>Da vi arbejde med at få burgermenuen til at virke, fungerede det kun med normal JavaScript kode. Det var ikke muligt for os at få funktionen til at fungere med jQuery. Vi besluttede os for ”bare” at bruge normal JavaScript grundet tidspres. Jeg har nu sat mig mere ind i jQuery og fik ændret vores normale javescript kode om til jQuery kode. </p>
+				
+				<h3>Refleksioner Remake-processen har givet</h3>
+				<p>Den første refleksion jeg havde under processen var forståelsen af hvor vigtigt det er at koden er overskueligt struktureret og nemt læselig. Dette er vigtig for at man selv og andre senere kan komme tilbage til koden, nemt forstå den og arbejde videre med den.</p>
+				<p>Når jeg tænker tilbage kan jeg fortryde at vi valgte at bruge Simple Grid, selvom vi på det tidspunkt havde behov for det. Næste gang vil jeg have mere iver for ikke kun at tage den nemmeste løsning, men det bedste. </p>
+				<p>Det var besværgeligt at lære jQuery nok til at kunne ”oversætte” den normale JavaScript kode om til jQuery. Hvor jeg før blot accepterede at koden fungerede som den gjorde, har jeg nu at jeg bedre forståelse for hvordan det fungere. Jeg ville gerne havde haft mere undervisning om JavaScript og jQuery i første semester, og jeg ser frem til at lære mere om det i de fremtidige semestre. </p>
+				
+				<h3>Links</h3>
+				<a href="../pdf/sweetbot_beskrivelse.pdf" target="_blank">Link til opgavebeskrivelsen</a> <br>
+				<a href="../hjemmesider/ny_version/sweetbot/forside.html" target="_blank">Link til Remake</a> <br>
+				<a href="../hjemmesider/gamle_version/sweetbot/forside.html" target="_blank">Link til gammel version</a> <br>
+				<a href="../pdf/sweetbot_rapport.pdf" target="_blank">Link til rapport</a> <br>
+				<a href="https://github.com/ThyMarX/sweetbot/">Link til projektets Github Repository</a>
+			</div>
+			
+		</div>
+				
+	</div>
+	
+	<script>
+		
+		/* -----Slideshow script----- */
+		var slideNr = 1;
+		visSlide(slideNr);
+
+		// Næste/forrige controls
+		function plusSlide(n) {
+		  visSlide(slideNr += n);
+		}
+
+		function visSlide(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("slide");
+		  if (n > slides.length) {slideNr = 1} 
+		  if (n < 1) {slideNr = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+			  slides[i].style.display = "none"; 
+		  }
+		  slides[slideNr-1].style.display = "block";
+		} 
+	
+	
+	
+	</script>
+	
+</body>
+	
+</html>

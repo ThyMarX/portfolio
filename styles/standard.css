@@ -1,0 +1,198 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -----Browser/CSS reset vi hugger fra eric mayer fra meyerweb----- */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {	display: block;}
+body 			{	line-height: 1;}
+ol /*,ul*/		{	list-style: none;}
+blockquote, q 	{	quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* --------------------------------------- */
+/* -------Her kommer mit eget style------- */
+/* --------------------------------------- */
+
+/* -----Overordnet css----- */
+
+html{ scroll-behavior:smooth;} /* Scroll effekten på forsiden */
+
+body{
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	color: #585858;
+	background: #FF5F7F6; /* I tilfælde at browser ikke kan tage gradient */
+	background-image: repeating-linear-gradient(-25deg, white 15%, #F5F7F6 30%, white 45%);
+}
+
+
+/* Containeren som alt på siden er i */
+#container{
+	max-width: 3000px;
+	margin: 0 2.7%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+/* For at lave noget om til flex */
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.ikkeFlex{
+	display: default;
+	flex-wrap: nowrap;
+	justify-content: 0;
+}
+
+img{
+	width: 100%;
+	height: auto;
+}
+
+/* For at lave noget om til flex */
+h1{	font-size: 5vw;}
+h2{ font-size: 3.2vw;}
+h3{ font-size: 2.2vw;}
+h4{ font-size: 1.6vw;}
+li{ font-size: 1.2vw;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	margin-top: 0.4vw;}
+p { font-size: 1.2vw;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	margin-top: 0.4vw;}
+
+
+/*List styling, nu hvor det er blevet nulstillet*/
+ul{
+	margin-left: 2vw;
+	font-size: 100%;
+	list-style: circle;
+	list-style-position: outside;
+}
+
+
+/* -----Sidebar sektionen og dens css----- */
+
+.sidebar{
+	position: fixed;
+	width: 11%;
+	height: 600px;
+	left: 0px;
+	margin: 0 2.7%;	
+	padding-top: 11px;
+}
+.logo{	
+	margin-bottom: 20px;
+}
+
+nav{
+	display: flex;
+	width: 90%;
+	height: 8vw;
+	flex-direction: column;
+	justify-content: space-between;
+	font-weight:bold;
+}
+a{
+	text-decoration: none;
+	color:#585858;
+	font-size: 1.6vw;
+}
+a:hover{ color:#A2A2A2;}
+
+.dropdownLinks{
+	flex-direction: column;
+	justify-content: space-between;
+	display: none;
+	position: absolute;
+	background-color: white;
+	width: 13vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	left: 3vw;
+	border-radius: 2px;
+}
+.dropdownLinks h4{ 
+	line-height: 2.5vw;
+	font-size: 1.4vw;
+}
+.dropdownLinks a{line-height: 20px;}
+.dropdown:hover .dropdownLinks {display: flex;}
+
+/*For at highligte hvilken side man er på*/
+.aktuel{color:#A2A2A2;}
+
+.sidebarStreg{ 
+	height: 80vh;
+	border-right: 1.5px solid #585858;
+}
+
+/* -----Main sektionen og dens css----- */
+
+.main{
+	width: 87.4%;
+	padding-left: 12%;
+	height: 100%;
+}
+
+.titel{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	margin-bottom: 4%;
+}
+
+.sektionsRamme{
+	width: auto;  /*ikke nødvendig, men hvis det ikke står der kommer der måske problemer senere*/
+	height: auto; /*ikke nødvendig, men hvis det ikke står der kommer der måske problemer senere*/
+	padding-bottom: 6%; 
+}
+
+.tekst{
+	border: 1.5px solid #585858;
+	background-color: white;
+	padding: 1vw;
+	border-radius: 2px;
+	line-height: 1.7vw;
+}
+
+li{ list-style-position: outside;}
+

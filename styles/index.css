@@ -1,0 +1,165 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* ---Forside sektionen og dens css--- */
+
+#forside{}
+
+.forsideBillede img{
+	width: 88%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* ---Projekter sektionen og dens css--- */
+
+#projekter{}
+
+.titel h4{margin-top: 3%;}
+
+.projektVindueStor, .projektVindueLille{
+	position: relative;
+	padding: 2%;
+	background-color: white;
+	border: 1.5px solid #585858;
+	border-radius: 3px;
+	background-image: linear-gradient(white, #F5F7F6);
+	box-shadow: 0px 0px 60px -20px rgba(0,0,0,1);
+}
+
+.projektVindueStor{	 margin: 5% 28.8%;}
+.projektVindueLille{ width: 21.7%;}
+
+.forgrunden{
+ 	opacity: 1;
+ 	display: block;
+ 	transition: .5s ease;
+ 	backface-visibility: hidden;
+}
+
+.baggrundenStor, .baggrundenLille{
+	transition: .5s ease;
+	opacity: 0;
+	position: absolute;
+	font-weight: bold;
+	top: 47%;
+	color: #585858;
+}
+
+.baggrundenStor{  left: 36%; font-size: 1.8vw;}
+.baggrundenLille{ left: 32%; font-size: 1.4vw;}
+
+.projektVindueStor:hover .forgrunden  {opacity: 0.3;}
+.projektVindueLille:hover .forgrunden {opacity: 0.3;}
+.projektVindueStor:hover .baggrundenStor  {opacity: 1;}
+.projektVindueLille:hover .baggrundenLille {opacity: 1;}
+
+/*Forsøgte at give billederne en inderst gennemsigtig border*/
+.gennemsigtigBorder{
+	box-shadow: inset 0px 0px 63px 10px rgba(199,82,199,1);
+}
+
+/* ---Om mig sektionen og dens css--- */
+
+#omMig{}
+
+
+.omMigTekst{
+	width: 34.2%;
+	margin-left: 7.5%;
+	margin-right: 4.2%;
+}
+.omMigBillede{
+	width: 41.5%;
+	margin-left: 4.2%;
+	margin-right: 7.5%;
+}
+.omMigBillede img{
+	box-shadow: 0 0 10px 1px black;
+	border-radius: 0.5%;	
+}
+
+
+/* ---Refleksion sektionen og dens css--- */
+
+#refleksioner{}
+
+#refleksioner h3{margin-bottom: 3%;}
+
+.refleksionerTekst1, .refleksionerTekst2{ width: 41.5%;}
+.refleksionerTekst1{ margin: 0 0.5% 0 7.5%;}
+.refleksionerTekst2{ margin: 0 7.5% 0 0.5%;}
+
+.refleksionerLink{
+	width: 50%;
+	margin-top: 4.5%;
+	height: 1%;
+}
+
+
+/* ---Kontakt sektionen og dens css--- */
+
+#kontakt{}
+
+.kontaktFormular{
+	width: 71.1%;
+	margin-left: 14.5%;
+	position: relative;
+}
+
+form{
+	position: absolute;
+	width: 100%;
+}
+
+.kontaktTekst{
+	margin-top: 10%;
+	text-align: center;
+}
+.kontaktTekst span{
+	background-color: rgba(255,255,255,0.6);
+	padding: 1% 1.7%;
+	border-radius: 2px;
+}
+
+.baggrundsBillede{
+	box-shadow: 0 0 10px 1px black;
+	border-radius: 0.5%;
+}
+
+textarea, input{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	color: #585858;
+	font-size: 1.2vw;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+}
+textarea{
+	margin-top: 4.5%;
+	height: 120px;
+	max-height: 300px;
+	min-height: 50px;
+	max-width: 58%;
+	min-width: 58%;
+	background-color: rgba(255,255,255,0.7);
+	font-size: 1.2vw;
+	padding: 2%;
+}
+input{
+	margin-top: 3%;
+	width: 15%;
+	height: 3vw;
+	border-radius: 3%;
+	border: none;
+}
+input:hover{
+	background-color: #B5B5B5;
+	cursor: pointer;
+}
+
+
+
+

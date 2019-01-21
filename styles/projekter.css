@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+
+.titel{margin-bottom: 1vw;}
+
+/* -----Slideshow sektionen og dens css----- */
+
+.slideshow{
+	width: 49.4%;
+	margin-left: 7.5%;
+	position: relative;
+}
+.slide img{
+	object-fit: scale-down;
+	width: 99.8%;
+	height: 36vw;
+	margin: 2px 2px 0 0;
+}
+.slideRamme{
+	border: 1.5px solid #585858;
+	border-radius: 2px 2px 0 0;
+}
+
+.slideTekst{
+	border-top: none;
+	border-radius: 0 0 2px 2px;
+}
+.slide p{margin-top: 0;}
+
+/* ---Forrige og næste knapperne--- */
+.forrige, .naeste{
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto; /*ikke nødvendig, men hvis det ikke står der kommer der måske problemer senere*/
+	margin-top: -22px; /*ikke nødvendig, men hvis det ikke står der kommer der måske problemer senere*/
+	padding: 16px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	background-color: rgba(255,255,255,0.3);
+	margin-right: 2px;
+	margin-left: 2px;
+}
+.naeste {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.forrige:hover, .naeste:hover {	background-color: #585858;}
+
+/* ---Numrene i hjørnet--- */
+.numbertext {
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	color: #585858;
+	font-size: 1vw;
+	padding: 8px 12px;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	background-color: rgba(255,255,255,0.3);
+	font-weight: bold;
+}
+
+/* ---Fading animationen--- */
+.fade {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+@keyframes fade {
+	from {opacity: 0} 
+	to {opacity: 1}
+} 
+
+
+/* -----Tekst sektionen på siden og dens css----- */
+
+.projektOpsummering{ width: 34.9%;}
+
+.projektTekst{
+	width: 71.1%;
+	margin-left: 7.5%;
+	margin-top: 3%;
+}
+
+h1, h2, h3, h4{	line-height: 150%;}
+
+.projektTekst a {text-decoration: underline;}
+
